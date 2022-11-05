@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 06-16</title>
+  </head>
+  <body>
+    <script>
+      const input1 = prompt('Enter first integer:')
+      const input2 = prompt('Enter second integer:')
+      const input3 = prompt('Enter third integer:')
+
+      const number1 = parseInt(input1)
+      let smallest = number1
+      let largest = number1
+
+      const number2 = parseInt(input2)
+      if (number2 < smallest) smallest = number2
+      if (number2 > largest) largest = number2
+
+      const number3 = parseInt(input3)
+      if (number3 < smallest) smallest = number3
+      if (number3 > largest) largest = number3
+
+      const sum = number1 + number2 + number3
+      const product = number1 * number2 * number3
+      const average = sum / 3
+
+      alert(`
+        The sum is: ${sum}\n
+        The product is: ${product}\n
+        The average is: ${average}\n
+        The smallest number is: ${smallest}\n
+        The largest number is: ${largest}\n
+      `)
+    </script>
+  </body>
+</html>

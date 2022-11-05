@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 06-20</title>
+  </head>
+  <body>
+    <script>
+      const input1 = prompt('Enter first integer:')
+      const input2 = prompt('Enter second integer:')
+      const input3 = prompt('Enter third integer:')
+      const input4 = prompt('Enter fourth integer:')
+      const input5 = prompt('Enter fifth integer:')
+
+      const number1 = parseInt(input1)
+      let smallest = number1
+      let largest = number1
+
+      const number2 = parseInt(input2)
+      if (number2 < smallest) smallest = number2
+      if (number2 > largest) largest = number2
+
+      const number3 = parseInt(input3)
+      if (number3 < smallest) smallest = number3
+      if (number3 > largest) largest = number3
+
+      const number4 = parseInt(input4)
+      if (number4 < smallest) smallest = number4
+      if (number4 > largest) largest = number4
+
+      const number5 = parseInt(input5)
+      if (number5 < smallest) smallest = number5
+      if (number5 > largest) largest = number5
+
+      alert(`
+        The smallest number is: ${smallest}\n
+        The largest number is: ${largest}\n
+      `)
+    </script>
+  </body>
+</html>

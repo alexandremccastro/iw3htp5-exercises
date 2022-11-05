@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 06-23</title>
+  </head>
+  <body>
+    <script>
+      const input1 = prompt('Enter first integer:')
+      const input2 = prompt('Enter second integer:')
+      const input3 = prompt('Enter third integer:')
+
+      let positiveCount = 0
+      let negativeCount = 0
+      let zerosCount = 0
+
+      const number1 = parseInt(input1)
+      if (number1 > 0) positiveCount = positiveCount + 1
+      if (number1 == 0) zerosCount = zerosCount + 1
+      if (number1 < 0) negativeCount = negativeCount + 1
+
+      const number2 = parseInt(input2)
+      if (number2 > 0) positiveCount = positiveCount + 1
+      if (number2 == 0) zerosCount = zerosCount + 1
+      if (number2 < 0) negativeCount = negativeCount + 1
+
+      const number3 = parseInt(input3)
+      if (number3 > 0) positiveCount = positiveCount + 1
+      if (number3 == 0) zerosCount = zerosCount + 1
+      if (number3 < 0) negativeCount = negativeCount + 1
+
+      document.writeln(`<h1>Positive count: ${positiveCount}</h1>`)
+      document.writeln(`<h1>Negative count: ${negativeCount}</h1>`)
+      document.writeln(`<h1>Zeros count: ${zerosCount}</h1>`)
+    </script>
+  </body>
+</html>

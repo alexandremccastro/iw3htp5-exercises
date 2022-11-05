@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Exercise 06-22</title>
+  </head>
+  <body>
+    <script>
+      const input1 = prompt('Enter first integer:')
+      const input2 = prompt('Enter second integer:')
+      const number1 = parseInt(input1)
+      const number2 = parseInt(input2)
+      
+      if (number1 % number2 == 0)
+        document.writeln(`<h1>${number1} is a multiple of ${number2}</h1>`)
+
+      if (number1 % number2 != 0)
+        document.writeln(`<h1>${number1} is not a multiple of ${number2}</h1>`)
+    </script>
+  </body>
+</html>
